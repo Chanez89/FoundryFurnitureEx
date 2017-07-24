@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Rock+Salt|Special+Elite' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type ="text/css" href="style1.css">
+	<title>Foundry Furniture: Location</title>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(41.778211,-88.1446906),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<style>
+.container{
+	height: 900px;
+}
+.topsection{
+	background-color: transparent;
+}
+</style>
+</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div><img src="images/header.png"></div>
+				<div class="navigation">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="lifestyle.html">Lifestyle</a></li>
+						<li><a href="livingRoom.html">Living Room</a></li>
+						<li><a href="diningRoom.html">Dining Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="location.html">Location</a></li>
+						<li><a href="account.html">My Account</a></li>
+					</ul>
+				</div>
+			</div>
+				<div class="topsection">
+					<div class="featuredbanner"><img src="images/locationbanner.jpg"></div>
+					<div id="googleMap" style="width:380px;height:380px;"></div>
+						<div class="locationtext">
+							<h2>Lorem Ipsum</h2><p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue condimentum, tristique diam ut, elementum ipsum. Aenean bibendum risus vel risus euismod, mollis semper tellus ultricies. Phasellus posuere dui nec efficitur aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean id tellus neque. Suspendisse quis tempor ligula, in mollis magna. Donec eget vehicula tortor, a tempus ante. Mauris eget urna ultricies neque dictum  </p>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue condimentum, tristique diam ut, elementum ipsum. Aenean bibendum risus vel risus euismod, mollis semper tellus ultricies. Phasellus posuere dui nec efficitur aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean id tellus neque. Suspendisse quis tempor ligula  </p>
+							<p>
+						</div>	
+				</div>
+			<div class="footer">
+				<div class="footertextblock"><h6>Lorem</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue </p>
+				</div>
+				<div class="footertextblock"><h6>Ipsum</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue </p>
+				</div>
+				<div class="footertextblock"><h6>Dolor</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue </p>
+				</div>
+				<div class="footertextblock"><h6>Sit</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id augue </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
